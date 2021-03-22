@@ -7,9 +7,9 @@
   <body>
     <script>
       var cakeorno = prompt("Do you want cake? (yes/no)");
-      if (cakeorno === "yes"); {
+      if (cakeorno === "yes" || cakeorno === "YES" || cakeorno === "y") { // || logical "or" operator
         console.log("Have some cake!");
-      } else if (cakeorno === "no") {
+      } else if (cakeorno === "no" || cakeorno === "NO" || cakeorno === "n") {
         console.log("No cake for you!");
       } else {
         console.log("Sorry, I don't understand."); //error message
