@@ -1,14 +1,10 @@
+translation = input("Give me a word in English...")
 
-      var translation = prompt("Give me a word in English...");
-      if (translation === "cat" || translation === "Cat" || translation === "CAT") {
-        console.log("gato");
-      }
-      else if (translation === "dog" || translation === "Dog" || translation === "DOG") {
-        console.log("dog");
-      }
-        else if (translation === "horse" || translation === "Horse" || translation === "HORSE") {
-        console.log("horse");
-        }
-      else {
-        console.log("No entiendo.");
-      }
+if translation == "cat" or translation == "Cat" or translation == "CAT":
+    print("gato")
+elif translation == "dog" or translation == "Dog" or translation == "DOG":
+    print("perro")
+elif translation == "horse" or translation == "Horse" or translation == "HORSE":
+    print("caballo")
+else:
+    print("No entiendo.")
