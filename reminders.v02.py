@@ -1,19 +1,26 @@
 import datetime
 
-# usertime = (input("What hour is it? (0-23)"))
-
+usertime = int(input("What hour is it? (0-23)"))
 
 now = datetime.datetime.now()
-print (now.year, now.month, now.day, now.minute, now.second)
+print (now.year, now.month, now.day, now.hour, now.minute, now.second)
 
 if usertime <= 5:
     print("It's early. You should be sleeping!")
 elif usertime <= 7:
-        print("It's early. You should be sleeping!")")
-elif usertime <= 9:
     print("Time to go to work.")
-elif usertime <= 12:
+elif usertime <= 9:
     print("You should be working!")
+elif usertime <= 12:
+    print("Take your lunch break!")
+elif usertime <= 13:
+    print("Do you feel that afternoon lull?")
+elif usertime <= 17:
+    print("Time to hit the gym…")
+elif usertime <= 19:
+    print("Gotta eat that dinner.")
+elif usertime <= 21:
+    print("Get that SLEEP. And rePEAT!")
 
 else:
     print("You didn’t type an acceptable value! (0-23)")
